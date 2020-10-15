@@ -1,0 +1,37 @@
+// Colour palette variable
+
+$color1: #0C1727;
+$color2: #182C4A;
+$color3: #46F3FF;
+$color4: white;
+$color5: #F9F9F9;
+$color6: #0F203A;
+
+// CSS flexbox,
+// *Arguments*
+//     pos : it defines the justify content
+//     dir : it defines the flex direction
+
+@mixin flexbox($dir,$pos) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $pos;
+    align-items: center;
+}
+
+// Css grid, col_num refers to the number of columns
+
+@mixin grid($col_num) {
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: repeat($col_num,1fr);
+    grid-gap: 35px;
+}
+
+// Transition function
+
+@mixin transition($pty) {
+    
+    transition: $pty 240ms ease-out;
+
+}

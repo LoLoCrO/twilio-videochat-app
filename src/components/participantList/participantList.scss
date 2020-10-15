@@ -1,0 +1,66 @@
+@import '../../main.scss';
+.participantList{
+    width: 400px;
+    background-color: $color6;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    transform:translateX(100%);
+    transition: transform 240ms ease-out;
+    z-index: 3;
+
+    
+   
+    @media only screen and (max-width: 768px) {
+        width: 60%;
+    }
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+    
+   
+    &__title
+    {
+        width: 100%;
+        height: 90px;
+        padding-left: 40px;
+        color: $color5;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__participant{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        background-color: $color2;
+        border: none;
+
+        &__icon {
+         width: 34px !important;
+         height: 34px !important;
+         margin-right: 20px;
+         margin-left: 70px;
+         color: $color3;
+        }
+
+        &__name{
+            color: $color5;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__role{
+            font-size: 14px;
+            color: $color3;
+        }
+       
+    }
+}
+.participantList.open{
+    transform:translateX(0);
+    
+    
+}

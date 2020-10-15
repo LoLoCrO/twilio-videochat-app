@@ -1,0 +1,29 @@
+.startForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    width: 400px;
+
+
+    &__name{
+        width: 350px;
+    }
+    &__room{
+        width: 350px;
+        
+    }
+    &__label{
+        color: rgb(255, 255, 255) !important;
+        opacity: .4;
+        
+    }
+
+    &__input{
+        color:white;
+    }
+}
+.startForm__button{
+    margin: 50px
+}

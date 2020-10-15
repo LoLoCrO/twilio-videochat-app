@@ -1,0 +1,31 @@
+@import './main.scss';
+
+.App{
+    height: 100vh;
+    @include flexbox(row,center);
+    align-items: unset;
+    background-color: $color1;
+    overflow: hidden;
+}
+body,html{
+ height: 100%;
+ background-color: $color1;
+}
+
+.error{
+    background-color: $color1;
+    width: 100%;
+    height: 100vh;
+    @include flexbox(row,center);
+
+    img{
+        width: 50%;
+        max-width: 500px;
+       
+}
+}
+#root{
+    width: 100%;
+    height: 100%;
+    
+}
